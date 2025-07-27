@@ -16,8 +16,11 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/accounting")
 public class AccountingController {
+
+    static final String ACCOUNTING_BASE_API = "/api/v1/accounting";
+    static final String ACCOUNTING_PROCESS_API = ACCOUNTING_BASE_API + "/process";
+    static final String ACCOUNTING_RECORDS_API = ACCOUNTING_BASE_API + "/records";
 
     private final AccountingService accountingService;
 
@@ -28,7 +31,7 @@ public class AccountingController {
      * @param rulesFile rules.json 파일
      * @return 처리 결과
      */
-    @PostMapping(value = "/process", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(path = ACCOUNTING_PROCESS_API, consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<AccountingProcessResponse> processAccounting(
             @NotNull(message = "고객사 ID는 필수입니다")
             @RequestParam("customerId") String customerId,
@@ -68,7 +71,7 @@ public class AccountingController {
      * @param companyId 고객사 ID
      * @return 회계 기록 리스트
      */
-    @GetMapping("/records")
+    @GetMapping(ACCOUNTING_RECORDS_API)
     public List<AccountingResponse> records(
             @RequestParam(name = "companyId") String companyId) {
         return accountingService.getRecords(companyId);

@@ -41,6 +41,7 @@ public class AccountingRepositoryExtensionImpl extends QuerydslRepositorySupport
                 .innerJoin(accounting.bankHistory, bankHistory)
                 .leftJoin(category).on(accounting.categoryId.eq(category.id))
                 .leftJoin(company).on(accounting.companyId.eq(company.id))
+                .where(accounting.companyId.eq(companyId))
                 .orderBy(bankHistory.transactionDateTime.desc())
                 .fetch();
     }

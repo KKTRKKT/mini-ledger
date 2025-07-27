@@ -9,5 +9,5 @@ import java.lang.annotation.*;
 @Target({ElementType.FIELD, ElementType.METHOD})
 public @interface CustomSequence {
     String prefix() default "ID";
-    String numberFormat() default "%05d";
+    String numberFormat() default "%d";
 }

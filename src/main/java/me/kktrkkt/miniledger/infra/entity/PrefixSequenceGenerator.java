@@ -20,7 +20,6 @@ public class PrefixSequenceGenerator extends SequenceStyleGenerator {
     private final String prefix;
     private final String numberFormat;
 
-    // 생성자 - 어노테이션 값과 연동됨!
     public PrefixSequenceGenerator(CustomSequence annotation) {
         this.prefix = annotation.prefix();
         this.numberFormat = annotation.numberFormat();
