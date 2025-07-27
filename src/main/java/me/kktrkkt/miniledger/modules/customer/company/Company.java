@@ -1,10 +1,10 @@
-package me.kktrkkt.miniledger.modules.company;
+package me.kktrkkt.miniledger.modules.customer.company;
 
 import jakarta.persistence.*;
 import lombok.*;
 import me.kktrkkt.miniledger.infra.entity.BaseEntity;
 import me.kktrkkt.miniledger.infra.entity.CustomSequence;
-import me.kktrkkt.miniledger.modules.company.category.Category;
+import me.kktrkkt.miniledger.modules.customer.company.category.Category;
 import me.kktrkkt.miniledger.modules.customer.Customer;
 import org.hibernate.annotations.Comment;
 

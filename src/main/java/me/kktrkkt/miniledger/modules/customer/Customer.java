@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import me.kktrkkt.miniledger.infra.entity.BaseEntity;
 import me.kktrkkt.miniledger.infra.entity.CustomSequence;
-import me.kktrkkt.miniledger.modules.company.Company;
+import me.kktrkkt.miniledger.modules.customer.company.Company;
 
 import java.util.HashSet;
 import java.util.Set;

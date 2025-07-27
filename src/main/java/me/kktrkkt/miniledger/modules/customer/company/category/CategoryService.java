@@ -1,9 +1,9 @@
-package me.kktrkkt.miniledger.modules.company.category;
+package me.kktrkkt.miniledger.modules.customer.company.category;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import me.kktrkkt.miniledger.modules.company.Company;
-import me.kktrkkt.miniledger.modules.company.CompanyRepository;
+import me.kktrkkt.miniledger.modules.customer.company.Company;
+import me.kktrkkt.miniledger.modules.customer.company.CompanyRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;

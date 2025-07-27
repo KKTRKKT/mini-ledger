@@ -1,4 +1,4 @@
-package me.kktrkkt.miniledger.modules.company;
+package me.kktrkkt.miniledger.modules.customer.company;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

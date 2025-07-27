@@ -1,10 +1,10 @@
 package me.kktrkkt.miniledger.api.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import infra.MockMvcTest;
-import me.kktrkkt.miniledger.modules.company.Company;
-import me.kktrkkt.miniledger.modules.company.CompanyFactory;
-import me.kktrkkt.miniledger.modules.company.category.CategoryRulesDto;
+import me.kktrkkt.miniledger.infra.MockMvcTest;
+import me.kktrkkt.miniledger.modules.customer.company.Company;
+import me.kktrkkt.miniledger.modules.customer.company.CompanyFactory;
+import me.kktrkkt.miniledger.modules.customer.company.category.CategoryRulesDto;
 import me.kktrkkt.miniledger.modules.customer.Customer;
 import me.kktrkkt.miniledger.modules.customer.CustomerFactory;
 import org.junit.jupiter.api.BeforeEach;

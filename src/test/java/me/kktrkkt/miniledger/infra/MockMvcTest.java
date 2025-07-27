@@ -1,4 +1,4 @@
-package infra;
+package me.kktrkkt.miniledger.infra;
 
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;

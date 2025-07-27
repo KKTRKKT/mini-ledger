@@ -1,7 +1,9 @@
-package me.kktrkkt.miniledger.modules.company;
+package me.kktrkkt.miniledger.modules.customer.company;
 
 import lombok.RequiredArgsConstructor;
 import me.kktrkkt.miniledger.modules.customer.Customer;
+import me.kktrkkt.miniledger.modules.customer.company.Company;
+import me.kktrkkt.miniledger.modules.customer.company.CompanyRepository;
 import org.springframework.stereotype.Component;
 
 @Component

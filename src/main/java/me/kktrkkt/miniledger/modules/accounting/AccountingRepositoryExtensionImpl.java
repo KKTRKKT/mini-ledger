@@ -10,8 +10,8 @@ import java.util.List;
 
 import static me.kktrkkt.miniledger.modules.accounting.QAccounting.accounting;
 import static me.kktrkkt.miniledger.modules.bankhistory.QBankHistory.bankHistory;
-import static me.kktrkkt.miniledger.modules.company.category.QCategory.category;
-import static me.kktrkkt.miniledger.modules.company.QCompany.company;
+import static me.kktrkkt.miniledger.modules.customer.company.category.QCategory.category;
+import static me.kktrkkt.miniledger.modules.customer.company.QCompany.company;
 
 
 @Transactional(readOnly = true)
