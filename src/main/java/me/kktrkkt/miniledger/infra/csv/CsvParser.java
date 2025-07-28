@@ -15,6 +15,10 @@ public class CsvParser implements Parser{
 
     @Override
     public List<Map<String, String>> parse(MultipartFile csvFile) {
+        if (csvFile == null || csvFile.isEmpty()) {
+            throw new IllegalArgumentException("CSV 파일이 null이거나 비어있습니다.");
+        }
+
         List<Map<String, String>> result = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(csvFile.getInputStream(), StandardCharsets.UTF_8))) {
